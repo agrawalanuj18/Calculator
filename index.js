@@ -14,6 +14,10 @@ Array.from(buttons).forEach((button) => {
        string =  string.slice(0, -1);
         document.querySelector("input").value = string;
       }  
+      else if (e.target.innerHTML == "%") {
+        string = eval(string/100);
+        document.querySelector("input").value = string;
+      } 
 
     else {
       console.log(e.target);
